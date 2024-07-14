@@ -108,7 +108,7 @@ $ sudo systemctl daemon-reload
 
 負荷グラフにも示されました。
 
-![](./images/loadavg-crop.png)
+![](./images/loadavg.png)
 
 ## ライセンス
 ```
