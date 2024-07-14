@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for saba-memo-runner
+
+[Timer]
+OnCalendar=minutely
+Persistent=true
+RandomizedDelaySec=5
+FixedRandomDelay=true
+
+[Install]
+WantedBy=timers.target

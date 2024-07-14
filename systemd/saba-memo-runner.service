@@ -1,0 +1,13 @@
+[Unit]
+Description=Run commands using the host memo of Mackerel
+After=mackerel-agent.service
+
+[Service]
+Type=oneshot
+KillMode=process
+User=<USERID>
+WorkingDirectory=<PATH>/saba-memo-runner
+ExecStart=<PATH>/saba-memo-runner/saba-memo-runner.sh
+
+[Install]
+WantedBy=multi-user.target

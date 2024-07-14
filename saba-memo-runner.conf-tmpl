@@ -1,2 +1,2 @@
-config["sleep"]="touch sleep.lock; sleep 120; rm sleep.lock"
-config["stress"]="touch stress.lock; stress -c 3 -t 59; rm stress.lock"
+config["echo"]="echo 'HELLO'"
+config["stress"]="touch stress.lock; stress -c 2 -t 59; rm stress.lock"
