@@ -49,9 +49,6 @@ echo "$RESULT" | {
           ! -f "${line}.lock" ]]; then
       [[ "$DEBUG" ]] && echo "DEBUG:${line}:${config["$line"]}"
       bash -c "${config["$line"]}" &
-    elif [[ $line == "_CLEAR_LOCK" ]]; then
-      [[ "$DEBUG" ]] && echo "DEBUG:_CLAER_LOCK"
-      rm -f *.lock
     fi
   done
 }
