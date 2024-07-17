@@ -1,2 +1,4 @@
 config["echo"]="echo 'HELLO'"
 config["stress"]="touch stress.lock; stress -c 2 -t 59; rm stress.lock"
+config["stress4"]="touch stress.lock; stress -c 4 -t 59; rm stress.lock"
+config["stress8"]="touch stress.lock; stress -c 8 -t 59; rm stress.lock"
